@@ -1,0 +1,33 @@
+/*
+ENUNCIADO
+.btn {
+    background-color: white;
+    color: black;
+    border: solid 1px black;
+    padding: 0.5em;
+    font-size: 1em;
+    width: fit-content;
+    cursor: pointer;
+}
+
+.btn-success{
+    background-color: #119DA4;
+    border-color: #1F2041;
+    color: white;
+}
+*/
+.btn, .btn-success {
+  background-color: white;
+  color: black;
+  border: solid 1px black;
+  padding: 0.5em;
+  font-size: 1em;
+  width: fit-content;
+  cursor: pointer;
+}
+
+.btn-success {
+  background-color: #119DA4;
+  border-color: #1F2041;
+  color: white;
+}

@@ -1,0 +1,49 @@
+/* ENUNCIADO
+tr:nth-child(1){
+    background-color: #99D5C9;
+    color: black;
+}
+
+tr:nth-child(2){
+    background-color: #392B58;
+    color: white;
+}
+
+tr:nth-child(3){
+    background-color: #99D5C9;
+    color: black;
+}
+
+tr:nth-child(4){
+    background-color: #392B58;
+    color: white;
+}
+
+tr:nth-child(5){
+    background-color: #99D5C9;
+    color: black;
+}
+
+tr:nth-child(6){
+    background-color: #392B58;
+    color: white;
+}
+*/
+@use 'theme';
+
+@mixin alternated-rows($rows: 10){
+    @for $counter from 1 to $rows{
+        tr{
+            @if($counter % 2 == 0){
+                background-color: $even-back-color;
+                color: $even-font-color;
+            }
+            @else{
+                background-color: $odd-back-color;
+                color: $odd-font-color;
+            }
+        }
+    }
+}
+
+@include alternated-rows(20);

@@ -1,0 +1,28 @@
+/*
+ENUNCIADO
+div{
+    margin: 0.5em;
+    padding: 1em;
+    border: 1px solid #7B9EA8;
+}
+
+body{
+    background-color: #E6C79C;
+    color: #78586F;
+}
+*/
+
+
+@use 'theme' as t;
+@use 'dimensions' as d;
+
+div{
+    margin: d.$default-margin;
+    padding: d.$default-padding;
+    border: d.$default-border-width solid t.$contrast-color;
+}
+
+body{
+    background-color: t.$main-color;
+    color: t.$font-color;
+}

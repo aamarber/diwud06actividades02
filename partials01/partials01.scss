@@ -1,0 +1,16 @@
+/* ENUNCIADO
+body{
+    width: 800px;
+    height: 600px;
+    font-size: 12px;
+    line-height: 1.5px;
+}
+*/
+@use 'parameters';
+
+body{
+    width: parameters.$screen-width;
+    height: parameters.$screen-height;
+    font-size: parameters.$default-font-size;
+    line-height: parameters.$default-line-height;
+}

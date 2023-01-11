@@ -35,12 +35,12 @@ tr:nth-child(6){
     @for $counter from 1 to $rows{
         tr{
             @if($counter % 2 == 0){
-                background-color: $even-back-color;
-                color: $even-font-color;
+                background-color: theme.$even-back-color;
+                color: theme.$even-font-color;
             }
             @else{
-                background-color: $odd-back-color;
-                color: $odd-font-color;
+                background-color: theme.$odd-back-color;
+                color: theme.$odd-font-color;
             }
         }
     }
